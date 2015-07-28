@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tip_no_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal|bottom"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:visibility="invisible" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/factory_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray6"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textSize="15sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/gray" >
+        </View>
+
+        <!-- 选择发出的换货商品 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="选择发出的换货商品"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+
+        <com.eims.tjxl_andorid.weght.MyListView
+            android:id="@+id/listview_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+        </com.eims.tjxl_andorid.weght.MyListView>
+
+        <TextView
+            android:id="@+id/btn_choose_send_goods"
+            style="@style/btnRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="+选择商品"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/gray" >
+        </View>
+
+        <TextView
+            android:id="@+id/tv_total_price_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="小计金额：0.0"
+            android:textColor="@color/gray"
+            android:textSize="13sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray6" >
+        </View>
+
+        <!-- 选择发回的换货商品 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="需要换回的商品"
+                android:textSize="14sp" >
+            </TextView>
+        </LinearLayout>
+
+        <com.eims.tjxl_andorid.weght.MyListView
+            android:id="@+id/listview_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+        </com.eims.tjxl_andorid.weght.MyListView>
+
+        <TextView
+            android:id="@+id/btn_choose_receive_goods"
+            style="@style/btnGray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="+选择商品" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/gray" >
+        </View>
+
+        <TextView
+            android:id="@+id/tv_total_price_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical|right"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="小计金额：0.0"
+            android:textColor="@color/gray"
+            android:textSize="13sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray6" >
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:text="退款说明："
+            android:textSize="15sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_exchange_description"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="2"
+            android:background="@drawable/shape_et_bg"
+            android:gravity="right|left"
+            android:hint="请填写退款说明"
+            android:minHeight="100dp"
+            android:padding="5dp"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray"
+            android:text="提示：“发回的换货商品”必须大于或者等于“发出的换货商品”的总额"
+            android:textSize="13sp" >
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray6" >
+        </View>
+
+        <Button
+            android:id="@+id/commit"
+            style="@style/btnRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:text="提交申请" />
+    </LinearLayout>
+
+</RelativeLayout>

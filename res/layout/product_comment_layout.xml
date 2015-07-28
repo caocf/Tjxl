@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/order_background"
+        >
+        
+        <LinearLayout 
+              android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:background="@drawable/white_big_cornor_bg"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            >
+            
+            <TextView 
+            
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总体满意度:"
+                android:textSize="14sp"
+                android:textColor="@color/details_text"
+                />
+            
+              <LinearLayout 
+                  android:id="@+id/ll_context"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_marginLeft="8dp"
+                  >
+                   <TextView 
+                    android:id="@+id/manyi_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:textSize="14sp"
+                android:textColor="@color/red"
+                />
+                  
+                           
+              </LinearLayout>
+            
+        </LinearLayout>
+        
+        
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        />
+           
+        <RadioGroup 
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/white_big_cornor_bg"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            >
+            
+            <RadioButton 
+                android:id="@+id/btn_all"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="全部"
+                style="@style/black_text"
+                android:button="@null"
+                android:background="@drawable/comment_item_type_selector"
+                android:gravity="center"
+ 
+                
+                />
+             <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_color" />
+
+               
+              <RadioButton 
+                  android:id="@+id/btn_parise"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="好评"
+                  style="@style/black_text"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/comment_item_type_selector"
+                />
+                <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_color" />
+                <RadioButton 
+                    android:id="@+id/btn_zhong"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="中评"
+                  style="@style/black_text"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/comment_item_type_selector"
+                />
+                  <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line_color" />
+                  <RadioButton 
+                      android:id="@+id/btn_bad"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="差评"
+                 style="@style/black_text"
+                android:button="@null"
+                android:gravity="center"
+                android:background="@drawable/comment_item_type_selector"
+                />
+            
+        </RadioGroup>
+        
+        <TextView 
+            android:id="@+id/tips_msg"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="暂无评论信息!"
+            android:gravity="center"
+            style="@style/button_text"
+            />  
+        
+        <com.eims.tjxl_andorid.weght.MyListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:layout_margin="8dp"
+        ></com.eims.tjxl_andorid.weght.MyListView>
+
+</LinearLayout>

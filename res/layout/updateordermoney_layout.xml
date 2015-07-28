@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="@drawable/white_big_cornor_bg"
+    android:minWidth="300dp" 
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:hint="Title"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/icon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tip_tv"
+            android:background="#0000" />
+    </RelativeLayout>
+
+    <com.eims.tjxl_andorid.weght.DashedLineView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/black_text"
+            android:text="驳回原因:"
+            />
+          <TextView
+            android:id="@+id/reason" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/black_text"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="3dp"
+          
+            />
+    </LinearLayout>
+    
+ <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/black_text"
+            android:text="退款金额 :"
+            />
+                <EditText 
+            android:id="@+id/modfiy_money"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            style="@style/black_text"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:hint="修改后的金额已包含运费"
+            android:paddingLeft="3dp"
+            android:background="@drawable/gary_broder_line"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+ 
+     <TextView 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="提示:修改后的订单改为申请中"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="8dp"
+         android:textColor="@color/sheng_red"
+         android:textSize="12sp"
+         android:visibility="gone"
+         />
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+        android:id="@+id/btn_cacanel"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_bg"
+            android:hint="confrim"
+            android:textColor="@color/button_text" />
+
+        <Button
+            
+           android:id="@+id/ok_btn"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/red_rounded_corners_bg"
+            android:hint="cancel"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+

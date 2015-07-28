@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_cxwq"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/order_background"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cxwq"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/red_btn_click"
+            android:text="撤销维权"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+         <Button
+            android:id="@+id/btn_wqtg"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/red_btn_click"
+            android:text="维权通过"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_cxwq"
+        android:layout_below="@id/head"
+        android:scrollbars="none"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="8dp" >
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="申请维权商品" />
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:text="换货编号：" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6" />
+
+            <RelativeLayout
+                android:id="@+id/root"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp" >
+
+                <ImageView
+                    android:id="@+id/good_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/gary_broder_line"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/xytj" />
+
+                <TextView
+                    android:id="@+id/good_name"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/good_image"
+                    android:lineSpacingExtra="3dp"
+            />
+            </RelativeLayout>
+                   <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="8dp"
+            >
+            <Button 
+                android:id="@+id/btn_contactSeller"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/gary_broder_line"
+                android:text="联系卖家"
+                style="@style/button_text"
+                android:visibility="invisible"
+                />
+                  <Button 
+                      android:id="@+id/btn_showWqList"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="30dp"
+                android:background="@drawable/red_btn_click"
+                android:layout_marginLeft="8dp"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:text="查看维权清单"
+                />
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+   
+                android:background="@color/gray6" />
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_margin="8dp"
+               >
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="维权类型:"
+                   style="@style/black_text"
+                   />
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:id="@+id/wqType"
+                   style="@style/black_text"
+                   android:layout_marginLeft="5dp"
+                   />
+           </LinearLayout>
+             <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginLeft="8dp"
+               android:layout_marginRight="8dp"
+               >
+               <TextView 
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="期望处理方式:"
+                   style="@style/black_text"
+                   />
+               <TextView 
+                   android:id="@+id/qwclHandling"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+     
+                   style="@style/black_text"
+                   android:layout_marginLeft="5dp"
+                   />
+           </LinearLayout>
+           
+             <TextView 
+                  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:text="维权说明："
+                   style="@style/black_text"
+                   android:layout_margin="8dp"
+                 />
+            
+             <TextView 
+                 android:id="@+id/wqDesc"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+          android:layout_marginTop="3dp"
+                 android:layout_marginLeft="8dp"
+                 android:layout_marginRight="8dp"
+                 android:padding="3dp"
+                 />
+             
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray6"
+                android:layout_marginTop="12dp"
+                />
+            
+            <com.eims.tjxl_andorid.weght.MyListView
+                android:id="@+id/comment_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:cacheColorHint="#0000"
+                android:divider="#0000"
+                android:dividerHeight="10dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:visibility="visible" >
+            </com.eims.tjxl_andorid.weght.MyListView>
+            
+            <include 
+                layout="@layout/wqdesc_layout"
+            
+                />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

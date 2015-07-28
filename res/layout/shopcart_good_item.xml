@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/person_click"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/good_imgage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitXY"
+               android:background="@drawable/gary_broder_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/good_imgage" >
+
+                <TextView
+                    android:id="@+id/good_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="6dp"
+                    android:text="New Balance/NB/新百伦 运动户外爬山鞋 ML5744B0"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/min_batch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/qp"
+                    android:gravity="center"
+                    android:text="5双起批"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+                
+                  <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/min_batch"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+            
+                    android:textColor="@color/sheng_red"
+                    android:textSize="12sp" />
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    
+          <LinearLayout 
+            android:id="@+id/ll_gooditem_size"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+              android:orientation="vertical" 
+            >
+             
+         </LinearLayout>
+    
+
+</LinearLayout>

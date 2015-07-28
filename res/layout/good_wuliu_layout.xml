@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/order_background"
+     >
+     
+ <LinearLayout 
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:orientation="vertical"
+        >
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        />
+    <RelativeLayout 
+        android:id="@+id/rl_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@color/line"
+        
+        >
+        
+        <TextView 
+            android:id="@+id/feiyong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/details_text"
+            android:textSize="14sp"
+            android:padding="5dp"
+            
+            />
+        
+   
+        
+    </RelativeLayout>
+    
+    
+  
+    <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+            android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:background="@color/divider_color"
+        android:orientation="horizontal" >
+
+        
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+              android:id="@+id/btn_ok"
+            android:background="@drawable/red_rounded_corners_bg"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+   </LinearLayout>
+     
+    <LinearLayout 
+     
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/order_background"
+    android:layout_above="@id/ll_bottom"
+     >
+    
+    
+     <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:orientation="horizontal"
+          android:gravity="center_vertical"
+         >
+         
+         <TextView 
+             android:id="@+id/fahuo_adress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+         
+             style="@style/black_text"
+             android:layout_marginLeft="5dp"
+            
+             />
+         
+          <TextView 
+             android:id="@+id/fahuo_adress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="送至"
+             style="@style/gray_text"
+             android:layout_marginLeft="8dp"
+            
+             />
+          
+        
+     </LinearLayout>
+     
+     <View 
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/line"
+         />
+     
+          <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:layout_marginTop="5dp"
+          android:layout_margin="5dp"         >
+         
+         <TextView 
+             android:id="@+id/choose_prvionce"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="40dp"
+             android:text="请选择"
+             style="@style/button_text"
+             android:gravity="center"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/all_while_black_line_bg"
+             />
+         
+         <TextView 
+             android:id="@+id/city"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="40dp"
+             android:text="请选择"
+             style="@style/button_text"
+            android:gravity="center"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/all_while_black_line_bg"
+             />
+         
+         <TextView 
+             android:id="@+id/city_qu"
+              android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="40dp"
+             android:text="请选择"
+             style="@style/button_text"
+             android:gravity="center"
+             android:layout_marginLeft="5dp"
+             android:background="@drawable/all_while_black_line_bg"
+             />
+          
+        
+     </LinearLayout>
+     
+           <View 
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="@color/line"
+         />
+           
+            <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:orientation="horizontal"
+          android:gravity="center_vertical"
+          android:visibility="gone"
+         >
+         
+         <TextView 
+             android:id="@+id/fahuo_adress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="单位重量"
+             style="@style/gray_text"
+             android:layout_marginLeft="5dp"
+            
+             />
+         
+          <TextView 
+             android:id="@+id/fahuo_adress"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="包邮"
+             style="@style/black_text"
+             android:layout_marginLeft="8dp"
+            
+             />
+          
+        
+     </LinearLayout>  
+     </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/view_flow_layout" />
+    <com.eims.tjxl_andorid.weght.MyWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+    <!--<com.eims.tjxl_andorid.weght.NestScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:fadingEdge="none"-->
+        <!--android:scrollbars="none" >-->
+
+    <!--&lt;!&ndash;<com.eims.tjxl_andorid.weght.BorderScrollView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/sv_main"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:fadingEdge="none"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:fillViewport="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:scrollbars="none"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:visibility="gone">&ndash;&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<include layout="@layout/view_flow_layout" />-->
+
+        <!--</LinearLayout>-->
+        <!--</com.eims.tjxl_andorid.weght.NestScrollView>-->
+
+    <!--</com.eims.tjxl_andorid.weght.BorderScrollView>-->
+
+</LinearLayout>

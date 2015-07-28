@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/person_click"
+    android:descendantFocusability="blocksDescendants"
+    >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <TextView 
+            android:id="@+id/wq_shoe_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卖家用户名"
+            style="@style/black_text"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            />
+        
+         <TextView 
+            android:id="@+id/order_wq_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="维权订单类型"
+            android:textColor="@color/sheng_red"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            />
+         <View 
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="@color/line"
+             android:layout_toLeftOf="@id/order_wq_type"
+             android:layout_marginTop="2dp"
+             android:layout_marginBottom="2dp"
+             />
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+          android:layout_marginLeft="8dp"
+          android:layout_marginRight="8dp"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        >
+        
+          
+           
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_toRightOf="@id/rl_iamge"
+              android:layout_marginLeft="10dp"
+              >
+              <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              >
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="维权编号："
+                  style="@style/gray_text"
+                  />
+                   <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:id="@+id/order_wq_no"
+                  style="@style/black_text"
+                  android:layout_marginLeft="5dp"
+                  />
+              </LinearLayout>
+              
+           
+                 <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              >
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="维权类型："
+                  style="@style/gray_text"
+                  />
+                   <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/ordertype"
+                  style="@style/black_text"
+                  android:layout_marginLeft="5dp"
+                  />
+              </LinearLayout>
+                 <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              >
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="申请时间："
+                  style="@style/gray_text"
+                  />
+                   <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/order_wq_addtime"
+                  style="@style/black_text"
+                  android:layout_marginLeft="5dp"
+                  />
+              </LinearLayout>
+              
+                    <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="8dp"
+              >
+              <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="订单维权类型："
+                  style="@style/gray_text"
+                  />
+                   <TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                   android:id="@+id/order_wq_status"
+                  style="@style/black_text"
+                  android:layout_marginLeft="5dp"
+                  />
+              </LinearLayout>
+              
+                 
+          <LinearLayout 
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="20dp"
+              android:layout_marginRight="8dp"
+              android:layout_marginBottom="10dp"
+              >
+              <Button 
+                  android:id="@+id/wqxq"
+                  android:layout_width="0dp"
+                  android:layout_weight="1" 
+                  android:layout_height="35dp"
+                  android:text="订单维权详情"
+                 android:textSize="14sp"
+                   android:visibility="gone"
+                android:textColor="@color/white"
+                  android:background="@drawable/red_btn_click"
+                  />
+               <Button 
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/hhwqxq"
+                  android:layout_height="35dp" 
+                  android:text="换货维权详情"
+                  android:background="@drawable/red_btn_click"
+                  android:textColor="@color/white"
+                  android:textSize="14sp"
+                  android:visibility="gone"
+                  
+                  />
+               
+                <Button 
+                  android:id="@+id/thwqxq"
+                  android:layout_width="0dp"
+                  android:layout_weight="1" 
+                  android:layout_height="35dp"
+                  android:text="退货维权详情"
+                 android:textSize="14sp"
+                   android:visibility="gone"
+                android:textColor="@color/white"
+                  android:background="@drawable/red_btn_click"
+                  />
+                
+               <Button 
+                  android:layout_width="0dp"
+                  android:layout_weight="1"
+                  android:id="@+id/plwqxq"
+                  android:layout_height="35dp" 
+                  android:text="评论维权详情"
+                  android:background="@drawable/red_btn_click"
+                  android:textColor="@color/white"
+                  android:textSize="14sp"
+                
+                  android:visibility="gone"
+                  />
+        
+         
+              </LinearLayout> 
+          </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/order_background"
+        />
+    
+
+</LinearLayout>

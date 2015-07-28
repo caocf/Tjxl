@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/title_background"
+     >
+    <ImageButton 
+        android:id="@+id/left_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="14dip"
+        android:src="@drawable/menux"
+        android:background="@null"
+          android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <RelativeLayout 
+        android:id="@+id/rl_home_serach"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/left_menu_btn"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_corners_bg"
+        android:padding="8dp"
+        >
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            >
+
+             <ImageView
+                 android:id="@+id/search_icon"
+                 android:layout_width="wrap_content"
+                 android:layout_height="30dp"
+                 android:layout_gravity="center_vertical"
+                 android:background="@drawable/search" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_marginLeft="5dp"
+                 android:layout_toRightOf="@id/search_icon"
+                 android:text="搜索商品、厂家、展厅"
+                 android:textColor="@color/search_text"
+                 android:textSize="14sp" />
+
+        </LinearLayout>
+     
+       
+    </RelativeLayout>
+   
+    
+</RelativeLayout>

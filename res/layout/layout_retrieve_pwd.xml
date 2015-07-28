@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_fragment"
+    android:orientation="vertical">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:weightSum="1.2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_circle1"
+                    android:layout_width="@dimen/common_circle_radius"
+                    android:layout_height="@dimen/common_circle_radius"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_bg_red"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="#CECECE" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_describ1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="输入账号"
+                android:textColor="@color/red"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CECECE" />
+
+                <TextView
+                    android:id="@+id/tv_circle2"
+                    android:layout_width="@dimen/common_circle_radius"
+                    android:layout_height="@dimen/common_circle_radius"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_bg_black"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_describ2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="验证身份"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:background="#CECECE" />
+
+                <TextView
+                    android:id="@+id/tv_circle3"
+                    android:layout_width="@dimen/common_circle_radius"
+                    android:layout_height="@dimen/common_circle_radius"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/circle_bg_black"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_big_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_describ3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="重置密码"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_circle4"
+                    android:layout_width="@dimen/common_circle_radius"
+                    android:layout_height="@dimen/common_circle_radius"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/circle_bg_black"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/common_big_text_size" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/tv_circle4"
+                    android:background="#CECECE" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_describ4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="10dp"
+                android:text="重置成功"
+                android:textSize="@dimen/common_small_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_retrieve_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/gray_bg_fragment" />
+</LinearLayout>

@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_big_text_size"
+        android:text="您好，查询申诉结果，请填写："
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_layout_height"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="申诉编号："
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <EditText
+            android:id="@+id/et_validate_code"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_yuanjiao_et_bg"
+            android:hint=""
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/common_big_text_size" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/common_layout_height"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.3"
+            android:gravity="center_vertical"
+            android:text="申诉密码："
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/shape_yuanjiao_et_bg"
+            android:password="true"
+            android:hint=""
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/gray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/common_big_text_size" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/btn_next"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/common_btn_red_selector"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_big_text_size" />
+
+</LinearLayout>

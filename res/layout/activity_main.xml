@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.zd.fvdemo.MainActivity">
+    
+      <com.eims.tjxl_andorid.weght.MyViewPager
+        android:id="@+id/vPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#FFFFFF"
+        android:flipInterval="30"
+        
+        android:persistentDrawingCache="animation" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="@color/search_text"
+        />
+    <RadioGroup 
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/naviate_buttom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+        
+        <RadioButton
+            android:id="@+id/info_hall_rbn"
+            style="@style/MenuStyl"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/item_info_hall_bg"
+            android:tag="0"
+            android:text="逛商城" />
+
+        <RadioButton
+            android:id="@+id/goods_track_rbn"
+            style="@style/MenuStyl"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/item_track_bg"
+            android:tag="1"
+            android:text="货品互换" />
+
+        <RadioButton
+            android:id="@+id/search_rbn"
+            style="@style/MenuStyl"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/item_tool_bg"
+            android:tag="2"
+            android:text="进货单" />
+
+        <RadioButton
+            android:id="@+id/assisant_rbn"
+            style="@style/MenuStyl"
+            android:drawablePadding="3dp"
+            android:drawableTop="@drawable/item_assisant_bg"
+            android:tag="3"
+            android:text="个人中心" />
+        
+    </RadioGroup>
+    
+    
+</LinearLayout>
+   
+

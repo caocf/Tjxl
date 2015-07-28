@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/title_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/left_menu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="14dip"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:src="@drawable/menux" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/tv_headview_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/details_text"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sv_exhibition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/view_flow_layout" />
+
+            <com.eims.tjxl_andorid.weght.MyGridView
+                android:id="@+id/gv_product"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="#EFEFEF"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+
+    </com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView>
+    <!--<com.eims.tjxl_andorid.weght.BorderScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/view_flow_layout" />
+
+            <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshListView
+                android:id="@+id/lv_exhibition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider_color"
+                android:dividerHeight="10dp"
+                android:scrollbars="none"/>
+        </LinearLayout>
+    </com.eims.tjxl_andorid.weght.BorderScrollView>-->
+
+</LinearLayout>

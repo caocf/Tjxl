@@ -1,0 +1,31 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF">
+    <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshGridView
+        xmlns:pulltorefresh="http://schemas.android.com/apk/res/com.eims.tjxl_andorid"
+        android:id="@+id/gv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="#EFEFEF"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:verticalSpacing="10dp"
+        pulltorefresh:ptrAnimationStyle="rotate"
+        pulltorefresh:ptrMode="disabled"
+        />
+    <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="#EFEFEF"
+        android:dividerHeight="10dp"
+        android:scrollbars="none" />
+
+
+
+
+</FrameLayout>

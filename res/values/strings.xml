@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">鞋联网</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+     <string name="viewpager_indicator">%1$d/%2$d</string>
+     <string name="error_tip"><Data><![CDATA[ <font color="red">%1$s</font> ]]></Data></string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_info_idcard_tip">提示：姓名与身份证认证后将不可修改</string>
+    <string name="user_info_email_tip">提示：发送验证邮件后，请登录邮箱验证</string>
+    <string name="choice_image_tip">图片上传</string>
+    <string name="wenxin_tip_7">请选择上传图片的来源</string>
+    <string name="toast_upload_failed">图片上传失败</string>
+    
+    <string name="about_us">\t\t天津鞋联网络科技有限公司成交于2014年7月，注册资金1000万元，是一家集B2B,O2O于一体的新型电商公司。公司致力于打造一个全国性的鞋类供需平台，以帮助鞋店与鞋厂无障碍对接 ，去除中间环节。 
+\n\n\t\t以B2B电子商务平台为基础，结合全国各地的实体展厅，组成一个完整的线上线下批发交易平台。即可以扩大厂家的销售市场，也可以让店家获得多元的进货渠道、低廉的进货价格，大大节约了厂家与商家销售成本。逐渐打造成厂家→平台→商家、商家→平台→厂家这样一个交互式平台。 
+</string>
+</resources>

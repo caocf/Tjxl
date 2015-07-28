@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/head"
+        android:layout_above="@id/layout_change"
+        android:orientation="vertical">
+
+        <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView
+            android:id="@+id/sv_exhibition"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/iv_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitXY"
+                    />
+                <com.eims.tjxl_andorid.weght.MyListView
+                    android:id="@+id/lv_exhibition"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:divider="@color/divider_color"
+                    android:dividerHeight="10dp" />
+            </LinearLayout>
+
+        </com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView>
+    </LinearLayout>
+</RelativeLayout>

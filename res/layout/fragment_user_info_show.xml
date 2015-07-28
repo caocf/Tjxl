@@ -1,0 +1,466 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/sv_main"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        <!--头像-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="头像"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+            <!--用户头像-->
+            <com.eims.tjxl_andorid.weght.CircularImage
+                android:id="@+id/ci_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/icon_head"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--用户名-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+        <!--隐藏昵称-->
+        <!--<View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        &lt;!&ndash;昵称&ndash;&gt;
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="2"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--性别-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="性别"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--出生日期-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingRight="10dp"
+                android:text="出生日期"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--姓名-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="真实姓名"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--身份证号码-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="身份证号码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_idcard"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+
+        <!--<View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray"
+            android:visibility="gone"/>
+        &lt;!&ndash;QQ号码&ndash;&gt;
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="QQ号码"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>-->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--鞋店名称-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="鞋店名称"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_shoe_store"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--鞋店地址-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="鞋店地址"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--营业执照-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="营业执照"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_business_license"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--绑定手机-->
+        <LinearLayout
+            android:id="@+id/btn_bind_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_click"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="绑定手机"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--绑定邮箱-->
+        <LinearLayout
+            android:id="@+id/btn_bind_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/person_click"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="绑定邮箱"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--修改密码-->
+        <TextView
+            android:id="@+id/tv_update_pwd"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/person_click"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--收货地址-->
+        <TextView
+            android:id="@+id/tv_receiving_adress"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/person_click"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="收货地址"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/gray" />
+        <!--浏览过的商品-->
+        <TextView
+            android:id="@+id/tv_browse_record"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:background="@drawable/person_click"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="浏览过的商品"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+    </LinearLayout>
+</ScrollView>

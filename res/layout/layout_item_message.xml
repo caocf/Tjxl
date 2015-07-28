@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@drawable/listview_item_click">
+    
+    
+    <TextView 
+        android:id="@+id/tv_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:textSize="@dimen/common_lage_text_size"
+        android:text=""
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/common_small_text_size"
+        android:text=""
+        android:padding="10dp"
+        />
+
+</LinearLayout>

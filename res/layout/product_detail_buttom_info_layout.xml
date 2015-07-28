@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/order_background">
+    
+
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        >
+        <View 
+            android:id="@+id/view01"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="@color/sheng_red"
+            />
+          <View 
+              android:id="@+id/view02"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="@color/order_background"
+            android:visibility="visible"
+            />
+            <View 
+                android:id="@+id/view03"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="@color/order_background"
+            android:visibility="visible"
+            />
+              <View 
+            android:id="@+id/view04"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="2dp"
+            android:background="@color/order_background"
+            />
+             
+    </LinearLayout>
+    
+   <LinearLayout
+            android:id="@+id/common_card_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal" >
+
+             <Button
+                android:id="@+id/product_attribute"
+                style="@style/card_item_btn_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/product_buttom_item_bg_selector"
+                android:text="产品属性"
+                android:tag="0"
+                
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line" />
+
+            <Button
+                android:id="@+id/product_comment_btn"
+                style="@style/card_item_btn_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/product_buttom_item_bg_selector"
+                android:text="商品评价"
+                android:tag="1"
+                android:visibility="visible"
+                />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/map_detail_text"
+                android:visibility="visible" />
+
+              <Button
+                android:id="@+id/buy_records_btn"
+                style="@style/card_item_btn_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/product_buttom_item_bg_selector"
+                android:text="成交记录"
+                android:tag="2"
+                />
+                  <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/line" />
+
+              <Button
+                android:id="@+id/recommended_btn"
+                style="@style/card_item_btn_style"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/product_buttom_item_bg_selector"
+                android:text="我的购买记录"
+                android:tag="3"
+                />
+           
+        </LinearLayout>
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content_frame"
+            ></FrameLayout>
+       <!--   <com.eims.tjxl_andorid.weght.MyViewPager
+        android:id="@+id/Pager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+       
+        android:background="@color/divider_color"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" /> -->
+
+</LinearLayout>

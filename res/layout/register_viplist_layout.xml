@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sv_register_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_height="0.1dp"
+                android:layout_width="match_parent"
+                android:background="@color/gainsboro" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/order_background"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="序号" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gainsboro" />
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="鞋店名称" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gainsboro" />
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="鞋店地址" />
+            </LinearLayout>
+            <View
+                android:layout_height="0.1dp"
+                android:layout_width="match_parent"
+                android:background="@color/gainsboro" />
+
+
+            <com.eims.tjxl_andorid.weght.MyListView
+                android:id="@+id/lv_register_history"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:divider="@color/gainsboro"
+                android:dividerHeight="0.1dp"/>
+        </LinearLayout>
+
+
+    </com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView>
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_content"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/white"-->
+    <!--android:orientation="vertical" >-->
+
+    <!-- -->
+
+    <!--<com.eims.tjxl_andorid.weght.xlistview.XListLayout-->
+    <!--android:id="@+id/xListLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

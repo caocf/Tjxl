@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <LinearLayout
+        android:id="@+id/layout_change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/act_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_image_type"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/slt"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/btn_list"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"/>
+
+            <TextView
+                android:id="@+id/btn_grid"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@id/head"
+        android:layout_above="@id/layout_change"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/iv_main"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_bg_light_gray"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/serach_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/search"
+                    android:hint="请输入关键字"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/details_text"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_serach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/red_rounded_corners_bg"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/frame_pro_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+</RelativeLayout>

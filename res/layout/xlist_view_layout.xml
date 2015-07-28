@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <ViewSwitcher
+        android:id="@+id/xlist_vswit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out"
+        android:persistentDrawingCache="animation" >
+
+        <RelativeLayout
+            android:id="@+id/xlist_error_rt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" >
+
+            <ProgressBar
+                android:id="@+id/xlist_progressBar"
+                style="@style/xlistview_style"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/xlist_notdata_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前无数据" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/xlist_notnetwork_lt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/no_network_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:drawablePadding="26dp"
+                    android:drawableTop="@drawable/network_error_logo"
+                    android:gravity="center_horizontal"
+                    android:text="轻点屏幕重试"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+      <com.eims.tjxl_andorid.weght.xlistview.XListView
+        android:id="@+id/xlist_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60e0e0e0"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fastScrollEnabled="false"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        android:visibility="gone" >
+    </com.eims.tjxl_andorid.weght.xlistview.XListView>
+        
+    </ViewSwitcher>
+
+</RelativeLayout>

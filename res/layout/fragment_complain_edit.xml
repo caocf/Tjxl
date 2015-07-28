@@ -1,0 +1,563 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="您好，请写以下申诉信息，填写的越多申诉成功几率越大："
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_big_text_size" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_show_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="真实姓名："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_idcard"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="身份证号码："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_idcard"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:numeric="integer"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="绑定手机："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:numeric="integer"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="绑定邮箱："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="QQ号码："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_qq"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:numeric="integer"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="推荐人："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_recommended"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="品牌名称："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_brand_name"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="成立时间："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <TextView
+                android:id="@+id/et_create_time"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="法定代表人："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_representative"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="工商注册号："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_registered_num"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.7"
+                android:background="@drawable/edit_bg_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+        <!--身份证-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_idcard_img"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="身份证(正反面)"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#E5E5E5">
+
+                <ImageView
+                    android:id="@+id/iv_idcard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_del_idcard1"
+                    android:layout_width="@dimen/common_circle_img"
+                    android:layout_height="@dimen/common_circle_img"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_del"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#E5E5E5">
+
+                <ImageView
+                    android:id="@+id/iv_idcard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_del_idcard2"
+                    android:layout_width="@dimen/common_circle_img"
+                    android:layout_height="@dimen/common_circle_img"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_del"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="营业执照"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#E5E5E5">
+
+                <ImageView
+                    android:id="@+id/iv_business_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_del_business_license"
+                    android:layout_width="@dimen/common_circle_img"
+                    android:layout_height="@dimen/common_circle_img"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_del"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="组织机构代码证"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#E5E5E5">
+
+                <ImageView
+                    android:id="@+id/iv_code_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_del_code_license"
+                    android:layout_width="@dimen/common_circle_img"
+                    android:layout_height="@dimen/common_circle_img"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_del"
+                    android:visibility="gone"
+                     />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="税务登记证"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:background="#E5E5E5">
+
+                <ImageView
+                    android:id="@+id/iv_tax_license"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add_pic" />
+
+                <ImageView
+                    android:id="@+id/iv_del_tax_license"
+                    android:layout_width="@dimen/common_circle_img"
+                    android:layout_height="@dimen/common_circle_img"
+                    android:layout_alignParentRight="true"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icon_del"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:text="申诉原因及其他补充内容："
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_big_text_size" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/edit_bg_gray"
+                android:padding="10dp"
+                android:gravity="top"
+                android:textColor="@color/gray"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/common_big_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

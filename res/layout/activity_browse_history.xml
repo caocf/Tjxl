@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="#EFEFEF"
+    android:orientation="vertical">
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/sv_pro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.eims.tjxl_andorid.weght.MyListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@color/gray"
+            android:dividerHeight="0.1dp"
+            android:listSelector="@android:color/transparent" />
+    </com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshScrollView>
+    <!--<com.eims.tjxl_andorid.weght.pulltorefresh.PullToRefreshListView-->
+    <!--android:id="@+id/lv_pro"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:divider="@color/gray"-->
+    <!--android:dividerHeight="0.1dp"-->
+    <!--android:scrollbars="none" />-->
+
+</LinearLayout>

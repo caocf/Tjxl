@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/order_background" >
+    
+     <LinearLayout
+        android:id="@+id/ll_content_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/goods_size"
+            style="@style/gray_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/goods_num"
+            style="@style/gray_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="6dp"
+            android:orientation="horizontal" >
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                 android:background="@drawable/jxk"
+                 android:gravity="center"
+                >
+
+            <ImageView
+                android:id="@+id/jian_num"
+                android:layout_width="33dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:id="@+id/num_edit"
+                android:layout_width="57dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@null"
+                android:inputType="number"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:id="@+id/add_num"
+                android:layout_width="33dp"
+                android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

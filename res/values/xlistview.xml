@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="xlistview_header_hint_normal">下拉可以刷新</string>
+    <string name="xlistview_header_hint_ready">释放更新数据</string>
+    <string name="xlistview_header_hint_loading">刷新中...</string>
+    <string name="xlistview_header_last_time">上次更新：</string>
+    <string name="xlistview_header_hint_complete">数据更新完毕</string>
+    <string name="xlistview_footer_hint_normal">上拉查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开加载数据</string>
+	<string name="xlistview_footer_hint_loading">加载中...</string>
+	
+	<style name="xlistview_style">
+		<item name="android:indeterminateDrawable">@anim/loading_large</item>
+		<item name="android:indeterminateDuration">1800</item>
+		<item name="android:layout_width">wrap_content</item> 
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:gravity">center_horizontal</item>
+	</style>
+	
+</resources>

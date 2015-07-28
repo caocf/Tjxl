@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流公司：" />
+
+        <TextView
+            style="@style/black_text"
+            android:id="@+id/wuliu_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="顺丰快递" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运单号码：" />
+
+        <TextView
+            style="@style/black_text"
+               android:id="@+id/expass_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="物流状态：" />
+
+        <TextView
+            style="@style/black_text"
+            android:id="@+id/logistis_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/act_common_bg" />
+
+    <ListView
+        android:id="@+id/wuliuinfo_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="#0000"
+        android:divider="#0000"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:visibility="visible" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="orange">#F05826</color>
+    <color name="blue">#37BAFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="line_color">#adb1b4</color>
+    <color name="black">#ff000000</color>
+    <color name="act_bg">#fff7f7f7</color>
+    <color name="map_detail_text">#ff999999</color>
+    <color name="gray">#AFAFAF</color>
+    <color name="yellow">#F99503</color>
+    <color name="divider_color">#F2F2F2</color>
+    <color name="track_bg">#fff2f2f2</color>
+    <color name="red">#D00000</color>
+    <color name="track_text">#ffE5E5E5</color>
+    <color name="gray7">#e7e7e7</color>
+    <color name="actionbar_color">#019587</color>
+          
+    <color name="act_common_bg">#f0f0f0</color>
+
+    <!-- 搜索框中字颜色 -->
+    <color name="search_text">#999999</color>
+    <color name="title_background">#fafafa</color>
+    <color name="border_background">#fff7f7f7</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <!-- 淡灰色 -->
+
+    <color name="dimgray">#696969</color>
+    <!-- 暗灰色 -->
+
+    <color name="text_gray">#999999</color>
+    <!-- 暗灰色 -->
+    <!-- 个人中心 -->
+    <color name="background_gray">#d9d9d9</color>
+    <!-- 灰色 -->
+    <color name="background_light_gray">#EAEAEA</color>
+    <!-- 灰白色 -->
+    <!-- 默认 未选中 红色 -->
+    <color name="sheng_red">#c40000</color>
+    <!-- 默认 选中 红色 -->
+    <color name="select_red">#b20000</color>
+    <!-- 首页红色 -->
+    <color name="index_red">#dd434d</color>
+    <!-- 首页红色按下 -->
+    <color name="index_red_press">#ab6569</color>
+    <!-- 首页红色按下 -->
+    <color name="red_dark">#c3232d</color>
+    <!-- 底部导航背景 -->
+    <color name="naviate_buttom">#f8f8f8</color>
+    <color name="order_background">#f7f7f7</color>
+    <color name="button_text">#666666</color>
+    <color name="details_text">#333333</color>
+    <color name="line">#cccccc</color>
+    <color name="bg_red">#c09D0102</color>
+    <color name="blue_sky">#33B5E5</color>
+    <color name="blue_dark">#0099CC</color>
+    <color name="gray6">#f6f6f6</color>
+    <color name="gray_bg_fragment">#EFEFEF</color>
+    
+     <color name="logistic_text_color">#25ae5f</color>
+     <color name="gary_text_color">#666666</color>
+     <color name="gary_bg_btn">#E5E5E5</color>
+</resources>

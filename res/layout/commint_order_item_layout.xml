@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wihte_rounded_corners_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/order_shoe_name"
+        style="@style/black_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:text="广州意尔康鞋业有限公司" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/ll_order_goodcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/order_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费计算：" />
+
+        <TextView
+            android:id="@+id/order_yunfei_price"
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥12.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="货品总金额：" />
+
+        <TextView
+            android:id="@+id/order_total_price"
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥12.00" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/remarks"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/broder_line"
+        android:gravity="top"
+        android:hint="给卖家留言~"
+        android:padding="5dp"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+              android:layout_alignParentRight="true"
+               android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            >
+                  <TextView
+            style="@style/gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_number"
+            android:text="0"
+            android:textSize="12sp" />
+                <TextView
+            style="@style/gray_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/500"
+            android:textSize="12sp" />
+        </LinearLayout>
+
+    
+    </RelativeLayout>
+
+</LinearLayout>

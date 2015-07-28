@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="维权回复:" />
+
+          <TextView
+              android:id="@+id/comment_time"
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2015-02-04" />
+    </RelativeLayout>
+    
+        <TextView 
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/broder_line"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/black_text"
+            android:padding="3dp"
+            android:gravity="top"
+            
+            />
+    
+    
+</LinearLayout>

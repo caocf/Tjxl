@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+        <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+        
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            >
+          <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+         
+            android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:background="@color/order_background"
+            android:orientation="vertical"
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                 android:layout_margin="8dp"
+
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_text"
+                    android:text="关联订单编号:"
+                    />
+                 <TextView 
+                     android:id="@+id/order_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_text"
+           
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+             <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_text"
+                    android:text="关联售后编号:"
+                    />
+                 <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/black_text"
+                    android:id="@+id/aftersale_no"
+                    android:layout_marginLeft="5dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray7"
+            />
+        
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="厂家店铺名称:" />
+
+                <TextView
+                    android:id="@+id/cj_shoename"
+                    style="@style/black_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+         
+            <TextView
+                style="@style/black_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:text="维权商品：" />
+
+            <com.eims.tjxl_andorid.weght.MyListView
+                android:id="@+id/order_wqlist_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:cacheColorHint="#0000"
+                android:divider="#0000"
+                android:dividerHeight="10dp"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:visibility="visible" >
+            </com.eims.tjxl_andorid.weght.MyListView>
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray7" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/total_wqprice"
+                    style="@style/button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:text="小计金额：￥0.00" />
+            </RelativeLayout>
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray7" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/act_common_bg"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/black_text"
+                android:text="上传的凭证："
+                android:layout_margin="8dp"
+                />
+
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="8dp"
+                >
+                <ImageView 
+                    android:id="@+id/img1"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    
+                    />
+                <ImageView 
+                     android:id="@+id/img2"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                     android:layout_marginLeft="5dp"
+                  
+                    />
+                <ImageView 
+                     android:id="@+id/img3"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="5dp"
+                   
+                    />
+            </LinearLayout>
+            </LinearLayout>
+            </ScrollView>
+</LinearLayout>

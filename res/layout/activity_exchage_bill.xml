@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tip_no_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center_horizontal|bottom"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        android:visibility="invisible" >
+    </TextView>
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/headview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </com.eims.tjxl_andorid.weght.HeadView>
+
+    <ScrollView
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/headview" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/factory_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray6"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:textSize="15sp" >
+            </TextView>
+
+            <!-- 发出的退货商品 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="选择发出的换货商品"
+                android:textSize="14sp" >
+            </TextView>
+
+            <com.eims.tjxl_andorid.weght.MyListView
+                android:id="@+id/good_listview_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+            </com.eims.tjxl_andorid.weght.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/gray" >
+            </View>
+
+            <TextView
+                android:id="@+id/total_price_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="金额小计：0.0"
+                android:textColor="@color/black"
+                android:textSize="13sp" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/gray6" >
+            </View>
+            <!-- 发回的换货商品 -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="发回的换货商品"
+                android:textSize="14sp" >
+            </TextView>
+
+            <com.eims.tjxl_andorid.weght.MyListView
+                android:id="@+id/good_listview_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+            </com.eims.tjxl_andorid.weght.MyListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/gray" >
+            </View>
+
+            <TextView
+                android:id="@+id/total_price_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="金额小计：0.0"
+                android:textColor="@color/black"
+                android:textSize="13sp" >
+            </TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/gray6" >
+            </View>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

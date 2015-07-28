@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageButton
+            android:id="@+id/iv_headview_goback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:paddingBottom="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingTop="10dp"
+            android:src="@drawable/fhan" />
+
+        <TextView
+            android:id="@+id/left_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_headview_goback"
+            android:contentDescription="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="10dp"
+            android:text="返回"
+            android:textColor="@color/text_gray"
+            android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/mid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="11月新品" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/right_imageview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:src="@drawable/search"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+ <TextView 
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="暂无商品购买记录！"
+        style="@style/button_text"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        />
+   <com.eims.tjxl_andorid.weght.MyListView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_buy"
+        android:divider="@null"
+        android:scrollbars="none"
+        >
+       
+   </com.eims.tjxl_andorid.weght.MyListView>
+   
+
+   
+
+</LinearLayout>

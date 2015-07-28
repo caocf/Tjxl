@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/order_background"
+    android:orientation="vertical" >
+
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/ll_viplist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已注册鞋店会员：" />
+
+        <TextView
+            android:id="@+id/vip_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       
+            android:textColor="@color/sheng_red"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/left_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@color/sheng_red" />
+
+        <View
+            android:id="@+id/right_line"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corners_bg" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rigster_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/shoe_store"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+              android:background="@drawable/selector_backgorund_color"
+            android:text="我是鞋店"
+            android:textColor="@drawable/selector_text_color"
+            android:checked="true"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/shoe_factory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_backgorund_color"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我是鞋厂"
+             android:textColor="@drawable/selector_text_color"
+            android:textSize="14sp" />
+    </RadioGroup>
+
+  
+    
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

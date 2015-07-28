@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_dialog_bg"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:background="@null"
+        android:gravity="center"
+        android:text="请选择省份"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+    
+    <ImageView 
+        android:id="@+id/executop_pop_left_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:paddingLeft="13dip"
+        android:src="@drawable/back"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ok_btn"
+        android:background="@drawable/selector_footer_dialog_bg"
+        android:orientation="horizontal"
+        android:paddingTop="20dip" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:divider="#C9C9C9"
+            android:dividerHeight="1dip"
+            android:fadingEdge="none"
+            android:padding="2dip"
+            android:scrollingCache="false" >
+        </ListView>
+    </RelativeLayout>
+
+
+
+    
+    
+
+</RelativeLayout>

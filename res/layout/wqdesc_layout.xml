@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp" >
+    
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="我的维权回复:" />
+
+          <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="2015-02-04" />
+    </RelativeLayout>
+    
+        <EditText 
+            android:id="@+id/me_comment"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/broder_line"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            style="@style/black_text"
+            android:padding="3dp"
+            android:gravity="top"
+            android:hint="我的回复"
+            />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            >
+            <Button 
+                android:id="@+id/btn_commint_comment"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:background="@drawable/red_btn_click"
+                android:text="回复"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/gray7"
+            />
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp" >
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="换货说明:" />
+
+        <Button
+            android:id="@+id/undoWq"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/gary_broder_line"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="invisible"
+            android:text="撤销维权" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:shrinkColumns="0,1" >
+
+        <TableRow android:paddingTop="8dp" >
+
+            <TextView
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="维权状态:" />
+
+            <TextView
+                android:id="@+id/wqstatus"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                 />
+        </TableRow>
+
+        <TableRow android:paddingTop="8dp" >
+
+            <TextView
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="申请维权时间:" />
+
+            <TextView
+                android:id="@+id/applywqTime"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+               />
+        </TableRow>
+
+        <TableRow android:paddingTop="8dp" >
+
+            <TextView
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="鞋联介入处理时间:" />
+
+            <TextView
+                android:id="@+id/xielianTime"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                />
+        </TableRow>
+         <TableRow android:paddingTop="8dp" >
+
+            <TextView
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="维权完成时间:" />
+
+            <TextView
+                android:id="@+id/wqCompleteTime"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

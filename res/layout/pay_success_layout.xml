@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white"
+    >
+    
+    
+    <com.eims.tjxl_andorid.weght.HeadView
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/cgxts" />
+
+        <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:text="你已成功付款" />
+
+        <TextView
+            android:id="@+id/pay_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+     
+            android:textColor="@color/sheng_red"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+    
+           <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"      
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:text="货物寄送至：" />
+           
+               <TextView
+                   android:id="@+id/user_consgine_adress"
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"      
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="3dp"
+         />
+      
+      
+           <TextView
+            style="@style/black_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"      
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/order_number"
+           />
+           
+           <LinearLayout 
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal"
+               android:layout_marginTop="8dp"
+               >
+               
+               <Button 
+                   android:id="@+id/btn_order_detail"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:text="查看订单详情"
+                   android:layout_weight="1"
+                   style="@style/black_text"
+                    android:layout_marginLeft="12dp"
+                   android:background="@drawable/comm_broder_line"
+                   android:layout_gravity="center_vertical"
+                   android:visibility="gone"
+                   />
+               
+               
+                   <Button 
+                       android:id="@+id/btn_order_list"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"
+                   android:text="已买到商品列表"
+                   android:layout_weight="1"
+                   style="@style/black_text"
+                   android:layout_marginLeft="15dp"
+                       android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                   android:background="@drawable/red_btn_click"
+                   android:textColor="@color/white"
+                   />
+           </LinearLayout>
+</LinearLayout>
