@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eims.tjxl_andorid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+ 
+        <!-- wifi -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 联网 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取设备号IMEI -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 拨打电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.eims.tjxl_andorid.app.AppContext"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.eims.tjxl_andorid.ui.GuideActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eims.tjxl_andorid.ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.eims.tjxl_andorid.ui.home.CategoryActivity" android:screenOrientation="portrait"/>
+        <activity 
+            android:name="com.eims.tjxl_andorid.ui.home.SerachActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:theme="@style/Default"
+            ></activity>
+        <activity 
+            android:name="com.eims.tjxl_andorid.ui.exhibition.ExhibitionCateActivity"
+             android:screenOrientation="portrait"
+            android:theme="@style/Default"
+            ></activity>
+               <activity 
+            android:name="com.eims.tjxl_andorid.ui.product.ProudctDeatil"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask"
+            android:theme="@style/Default"
+            ></activity>
+             <activity 
+            android:name="com.eims.tjxl_andorid.ui.product.SelectProductActivity"
+             android:screenOrientation="portrait"
+            android:theme="@style/Default"
+            ></activity>
+             
+             
+               <activity 
+            android:name="com.eims.tjxl_andorid.ui.product.FactorySearchResultActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask"
+            ></activity>
+                        <activity 
+            android:name="com.eims.tjxl_andorid.ui.product.FactoryActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask"
+            android:theme="@style/Default"
+            ></activity>
+            <activity 
+            android:name="uk.co.senab.photoview.ImagePagerActivity"
+             android:screenOrientation="portrait"
+            android:theme="@style/Default"
+            ></activity>
+             <activity 
+            android:name="com.eims.tjxl_andorid.ui.user.LoginActivity"
+             android:screenOrientation="portrait"
+             android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            ></activity>
+              <activity 
+            android:name="com.eims.tjxl_andorid.ui.user.RegisterActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            ></activity>
+                   <activity 
+            android:name="com.eims.tjxl_andorid.ui.user.ServerXieyiActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            ></activity>
+             <activity 
+            android:name="com.eims.tjxl_andorid.ui.user.RegisterListActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            />             
+               <activity 
+            android:name="com.eims.tjxl_andorid.ui.product.WuliuSelectorActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            />
+               <activity 
+            android:name="com.eims.tjxl_andorid.ui.shopcart.OrderActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            />
+                   <activity 
+            android:name="com.eims.tjxl_andorid.ui.shopcart.AddNewAdressActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            />
+          <activity 
+            android:name="com.eims.tjxl_andorid.ui.shopcart.AdressListActivity"
+             android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"  
+            />
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.user.MyCollectionsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.PayMentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        
+            <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.PaySuccessActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.user.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.home.area.SimpleAreaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.OrderListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+             <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.OrderWuliuQueryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+              <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!-- alipay sdk end -->
+
+        
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.product.ProductDeatil"
+            android:screenOrientation="portrait"
+            
+            android:theme="@style/Default" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.product.FactorySearchActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.home.SearchActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.product.ProductListActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.product.ClassifySearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.product.FactoryProductActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.exhibition.ExhibitionDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.user.MessageListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.user.MessageDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.setting.SettingActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.setting.SettingDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.ApplyAfterSaleServiceActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.eims.tjxl_andorid.ui.shop.ShopClassifyActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.user.retrievepwd.RetrievePwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.user.complain.FillInComplainActivity"
+             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.user.complain.AppealInquiryActivity"
+             android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.user.complain.ComplainResultActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+         <activity
+            android:name="com.eims.tjxl_andorid.ui.user.complain.ComplainTipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+          <activity
+            android:name="com.eims.tjxl_andorid.ui.shopcart.OrderAssessmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+          <activity
+            android:name="com.eims.tjxl_andorid.ui.user.updatepwd.UpdatePwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+
+        
+        <activity android:name="com.eims.tjxl_andorid.ui.product.GlobalClassifySearchActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >></activity>
+
+        <activity 
+		    android:name="com.eims.tjxl_andorid.ui.user.BrowseHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+        <activity
+		    android:name="com.eims.tjxl_andorid.ui.product.JionFactoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+        <activity
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.RefundDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.RefundDetailBillActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+			<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.ApplyforWqActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+				<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.WqOrderDeatilActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+				<activity 
+		    android:name="com.eims.tjxl_andorid.ui.product.GraphicDetailsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.ChooseExchangeProdectActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+
+			<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.WqOrderGoodListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+
+		<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.ExchangeProductDetailActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.ExchangeProductBillActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+			<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shopcart.InvoiceActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+
+		<activity
+		    android:name="com.eims.tjxl_andorid.ui.user.bindphone.BindPhoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity
+		    android:name="com.eims.tjxl_andorid.ui.user.bindemail.BindEmailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity
+		    android:name="com.eims.tjxl_andorid.ui.exhibition.ExhibitionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity
+		    android:name="com.eims.tjxl_andorid.common.CommonConfrimCancelDialog"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+		<activity 
+		    android:name="com.eims.tjxl_andorid.ui.shop.FactoryListActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+			<activity 
+		    android:name="com.eims.tjxl_andorid.ui.product.ShareActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+		</activity>
+    </application>
+         
+
+</manifest>
